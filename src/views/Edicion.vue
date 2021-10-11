@@ -1,7 +1,7 @@
 <template>
   <div class="container mt-5">
     <div>
-        <h1 class="text-center mb-4">Editando la opinión de: {{games[entrada].name}}</h1>
+        <h1 class="text-center mb-4">Editando la opinión de: {{opiniones[entrada].name}}</h1>
       <label for="exampleFormControlInput1" class="form-label"
         >Nombre</label
       >
