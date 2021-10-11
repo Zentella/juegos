@@ -27,13 +27,13 @@
         <button
           class="btn btn-primary text-white"
           data-toggle="modal"
-          data-target="#myModal"
+          :data-target="`#myModal${game.id}`"
         >
           Opinar
         </button>
         <div class="container">
           <!--Modal-->
-          <div class="modal fade" id="myModal" role="dialog">            
+          <div class="modal fade" :id="`myModal${game.id}`" role="dialog">            
             <div class="modal-dialog">
               <div class="modal-content">
                 <div class="modal-header">
@@ -126,7 +126,15 @@ export default {
   },
   props: ["game"],
   props: {
-    game: [],
+    game: [],/*
+    id: {
+      type: Number,
+      required: true,
+    },
+    name: {
+      type: String,
+      required: true,
+    },*/
   },
   data: function () {
     return {
@@ -143,15 +151,16 @@ export default {
       let datas = {        
         message: this.message,
         nombre: this.nombre,
-        name: this.game.name,
+        name: this.game.name,//this.name,
         id_game: this.game.id,
 
       }; 
-      console.log('id_game ',this.game.id)
-      console.log('name ',this.game.name)
+      console.log('game.id ',this.game.id)
+      console.log('game.name ',this.game.name)
 
         this.addToOp(datas)
     },
+    //name=""
   },
 }
 </script>

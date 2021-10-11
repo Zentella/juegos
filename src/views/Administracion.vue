@@ -17,7 +17,7 @@
                 <tr>
                     <td>{{index + 1}}</td>
                     <td>{{opinion.nombre}}</td>
-                    <td>{{games[index].name}}</td>
+                    <td>{{opinion.name}}</td>
                     <td>{{opinion.message}}</td>
                     <router-link :to="``"><button class="btn btn-danger" @click="opiniones.splice(index,1)">Eliminar</button></router-link>
                     <router-link :to="`/edicion/${index}`"><button class="btn btn-info text-white">Editar</button></router-link>

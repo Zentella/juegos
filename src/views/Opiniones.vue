@@ -21,7 +21,7 @@
                   :aria-controls="`collapseId${i}`"
                 >
                   Opinion creada por: {{ opinion.nombre }}. Para el juego:
-                  {{ games[i+1].name }}
+                  {{ opinion.name }}
                 </button>
               </h2>
             </div>
@@ -122,5 +122,8 @@ export default {
   computed: {
     ...mapState(["opiniones", "games"]),
   },
+  props: {
+    game: [],
+  }
 };
 </script>
