@@ -2,7 +2,7 @@
   <div
     class="header d-flex flex-column justify-content-center text-white text-center"
   >
-    <h1>Lista de Juegos Disponibles</h1>
+    <h1>{{ title }}</h1>
     <hr class="w-75 mx-auto" />
   </div>
 </template>
@@ -23,5 +23,8 @@ h6 {
 <script>
 export default {
   name: "Header",
+  props: {
+    title: String
+  }
 };
 </script>

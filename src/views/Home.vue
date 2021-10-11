@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <Header />
+    <Header title="Lista de Juegos Disponibles"/>
     <div class="container">
       <div class="row py-5">
         <div class="col-12 col-sm-3 mb-4 game" v-for="(game, i) in games" :key="i">
@@ -8,6 +8,7 @@
         </div>
       </div>
     </div>
+    
   </div>
 </template>
 
