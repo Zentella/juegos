@@ -1,18 +1,37 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Header />
+    <div class="container">
+      <div class="row py-5">
+        <div class="col-12 col-sm-3 mb-4 game" v-for="(game, i) in games" :key="i">
+          <Card :game="game" />
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import Header from "@/components/Header.vue"
+import Card from "@/components/Card.vue"
+import { mapState } from "vuex"
 
 export default {
-  name: 'Home',
+  name: "Home",
   components: {
-    HelloWorld
-  }
+    Header,
+    Card,
+  },
+
+  computed: {
+    ...mapState(["games"]),
+  },
 }
 </script>
+
+<style scoped>
+
+i, li {
+  color: white;
+}
+</style>
