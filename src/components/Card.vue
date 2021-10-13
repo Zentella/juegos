@@ -3,6 +3,7 @@
     <!---->
     <img
       class="card-img-top"
+      style="height:147px"
       :src="game.background_image"
     /><!--foto game de forma dinamica-->
     <div class="card-body">

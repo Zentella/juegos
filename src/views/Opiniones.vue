@@ -11,7 +11,7 @@
           <div class="accordion" id="accordionExample">
             <div class="card">
               <div class="card-header" id="headingOne">
-                <h2 class="mb-0">
+                <h2 class="mb-0" style="float: left">
                   <button
                     class="btn btn-link btn-block text-left collapsed"
                     type="button"
@@ -32,8 +32,8 @@
                 aria-labelledby="headingOne"
                 data-parent="#accordionExample"
               >
-                <div class="card-body">
-                  <strong>Opinión: </strong>{{ opinion.message }}
+                <div class="card-body" style="float: left">
+                  <strong class="ms-4">Opinión: </strong>{{ opinion.message }}
                 </div>
               </div>
             </div>
