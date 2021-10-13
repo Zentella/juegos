@@ -26,7 +26,7 @@
     <div class="card-body">
       <div class="d-flex justify-content-around">
         <button
-          class="btn btn-primary text-white"
+          class="btn btn-primary text-white btn_card"
           data-toggle="modal"
           :data-target="`#myModal${game.id}`"
         >
@@ -87,7 +87,7 @@
                 <div class="modal-footer">
                   <button
                     type="button"
-                    class="btn btn-default"
+                    class="btn btn-secondary"
                     data-dismiss="modal"
                   >
                     Cerrar
@@ -157,7 +157,8 @@ export default {
 </script>
 
 <style scoped>
-button {
-  margin-left: 80px;
+.btn_card {
+   position:relative;
+   margin-left: 33%;
 }
 </style>
