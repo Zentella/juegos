@@ -2,7 +2,7 @@
   <div class="container mt-5">
     <div>
         <h1 class="text-center mb-4">Editando la opinión de: {{opiniones[entrada].name}}</h1>
-      <label for="exampleFormControlInput1" class="form-label"
+      <label for="exampleFormControlInput1" class="form-label" style="float: left"
         >Nombre</label
       >
       <input
@@ -13,7 +13,7 @@
       />
     </div>
     <div class="mb-3">
-      <label for="exampleFormControlTextarea1" class="form-label"
+      <label for="exampleFormControlTextarea1" class="form-label" style="float: left"
         >Opiniones</label
       >
       <textarea
@@ -26,7 +26,7 @@
     <router-link :to="`/administracion`"><button class="btn btn-primary text-white">Regresar</button></router-link>
     <button
                     type="button"
-                    class="btn btn-primary"
+                    class="btn btn-info"
                     @click="messageSave"
                   >
                     Guardar
@@ -67,3 +67,9 @@ export default {
   },
 }
 </script>
+
+<style scoped>
+button {
+  margin-left: 80px;
+}
+</style>

@@ -126,15 +126,7 @@ export default {
   },
   props: ["game"],
   props: {
-    game: [],/*
-    id: {
-      type: Number,
-      required: true,
-    },
-    name: {
-      type: String,
-      required: true,
-    },*/
+    game: [],
   },
   data: function () {
     return {
@@ -151,16 +143,14 @@ export default {
       let datas = {        
         message: this.message,
         nombre: this.nombre,
-        name: this.game.name,//this.name,
+        name: this.game.name,
         id_game: this.game.id,
-
-      }; 
+      }
       console.log('game.id ',this.game.id)
       console.log('game.name ',this.game.name)
 
         this.addToOp(datas)
     },
-    //name=""
   },
 }
 </script>
