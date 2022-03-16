@@ -1,7 +1,7 @@
 <template>
   <div>
 <nav class="navbar navbar-expand-lg navbar-light bg-dark">      
-        <a class="logo navbar-brand" href="#"><i class="fa fa-headphones"> Games Opinion </i></a>
+        <a class="logo navbar-brand" href="#"><i class="fa fa-headphones"> {{title}} </i></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button> 
@@ -28,6 +28,10 @@ import { mapGetters } from 'vuex';
 //const { formatNumber } = utils;
 export default {
   name: "Navbar",
+
+  data:() => ({
+    title:'Games Opinion'
+  })
   /*props: {
     msg: String,
   },
